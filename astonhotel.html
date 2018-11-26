@@ -1,72 +1,297 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title>
-		Traveler Jember
+		Aston Hotel
 	</title>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<meta charset = "utf-8">
+	<link href="form.css" rel="text/css">
+	<script src="scripts.js"></script>
+	<style type="text/css">
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+} 
+{
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+	</style>
 </head>
 <body>
+	<div class="header">
+		<div class="col-6">
+			<h1 class="judul" >
+				<img src="Gambar/icon.png" width=60 class="img">
+				<p  style="display: inline-block; color:#f79c00; margin-bottom: 0px">TRAVELER</p> <p style="display: inline-block; color: #f79c00; margin-bottom:0px">JEMBER</p>
+			</h1>
+		</div>
+		
+		<div class="col-5">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Destination.html">Destination</a></li>
+				<li><a href="Events.html">Events</a></li>
+				<li><a href="Hotel.html">Hotel</a></li>
+			</ul>
 
-	
-		<div class="header">
-			<div class="col-6">
-				<h1 class="judul" >
-					<img src="Gambar/icon.png" width=60 class="img">
-					<p  style="display: inline-block; color:#f79c00; margin-bottom: 0px">TRAVELER</p> <p style="display: inline-block; color: #f79c00; margin-bottom:0px">JEMBER</p>
-				</h1>
-			</div>
-			
-			<div class="col-5">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="About.html">About</a></li>
-					<li><a href="Destination.html">Destination</a></li>
-					<li><a href="Events.html">Events</a></li>
-					<li><a href="Hotel.html">Hotel</a></li>
-				</ul>
-
-			</div>
 		</div>
-	
-    <div class="headertext">
-        <div style="width:100%;color:#fff; text-align: center;font-size:36px; text-shadow: 4px 2px 0 #323041;"><singleline>PESONA</singleline></div>
-        <div style="width:100%; text-shadow: 2px 2px 0 #323041; color:#fff; text-align: center;font-family: 'Lato', sans-serif;font-size:90px; text-transform: uppercase; font-weight: 300; letter-spacing: 5px;"><singleline>JEMBER</singleline></div>
-    </div>
-	
-	<div class="body">
-		<div class="next">
-			<span class="dot"></span>
-			<span class="dot"></span>
-			<span class="dot"></span>
-			<span class="dot"></span>
-			<span class="dot"></span>
-		</div>
-		<div class="slider">
-			<img src="Slider/1.jpg" style="width: 100%">
-			<div class="nama">PANTAI PAPUMA</div>
-		</div>
-		<div class="slider">
-			<img src="Slider/2.jpg" style="width: 100%">
-			<div class="nama">PANTAI PAYANGAN</div>
-		</div>
-		<div class="slider">
-			<img src="Slider/3.jpg" style="width: 100%">
-			<div class="nama">TAMAN NASIONAL MERU BETIRI</div>
-			</div>
-		</div>
-		<div class="slider">
-			<img src="Slider/4.jpg" style="width: 100%">
-			<div class="nama">JEMBER FASHION CARNAVAL</div>
-		</div>
-		<div class="slider">
-			<img src="Slider/5.png" style="width: 100%">
-			<div class="nama">AIR TERJUN TANCAK</div>
-		</div>
-			
 	</div>
-	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+
+<div class="headertext">
+	<div style="width:100%;color:#fff; text-align: center;font-size:36px; text-shadow: 4px 2px 0 #323041;"><singleline>HOTEL</singleline></div>
+	<div style="width:100%; text-shadow: 2px 2px 0 #323041; color:#fff; text-align: center;font-family: 'Lato', sans-serif;font-size:90px; text-transform: uppercase; font-weight: 300; letter-spacing: 5px;"><singleline>JEMBER</singleline></div>
+</div>
+
+<div class="body">
+	<div class="next">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+	<div class="slider">
+		<img src="Slider/hotel1.jpg" style="width: 100%">
+		<div class="nama">HOTEL DAFAM LOTUS</div>
+	</div>
+	<div class="slider">
+		<img src="Slider/hotel2.jpg" style="width: 100%">
+		<div class="nama">HOTEL ASTON</div>
+	</div>
+	<div class="slider">
+		<img src="Slider/hotel3.jpg" style="width: 100%">
+		<div class="nama">HOTEL ROYAL</div>
+		</div>
+	</div>
+	<div class="slider">
+		<img src="Slider/hotel4.jpg" style="width: 100%">
+		<div class="nama">CEMPAKA HILL</div>
+	</div>
+	<div class="slider">
+		<img src="Slider/hotel5.jpg" style="width: 100%">
+		<div class="nama">DOHO HOMESTAY</div>
+	</div>
+		
+</div>
+	
+<div class="deskripsi" style="height: 1200px;">
+		<div style="width: 100%;">
+			<center>
+				<h2>
+					Aston Hotel
+				<div>
+						<!-- Container for the image gallery -->
+<div class="container">
+
+	<!-- Full-width images with number text -->
+	<div class="mySlides">
+	  <div class="numbertext">1 / 6</div>
+		<img src="images/30000001000098411_wh_2.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">2 / 6</div>
+		<img src="images/30000001000204000_wh_2.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">3 / 6</div>
+		<img src="images/30000001000098409_wh_2.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">4 / 6</div>
+		<img src="images/30000001000098412_wh_2.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">5 / 6</div>
+		<img src="images/30000001000098415_wh_2.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">6 / 6</div>
+		<img src="images/30000001000203992_wh_2.jpg" style="width:100%">
+	</div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	<!-- Image text -->
+	<div class="caption-container">
+	  <p id="caption"></p>
+	</div>
+  
+	<!-- Thumbnail images -->
+	<div class="row">
+	  <div class="column">
+		<img class="demo cursor" src="images/30000001000098411_wh_2.jpg" style="width:100%" onclick="currentSlide(1)">
+	  </div>
+	  <div class="column"> 
+		<img class="demo cursor" src="images/30000001000204000_wh_2.jpg" style="width:100%" onclick="currentSlide(2)">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/30000001000098409_wh_2.jpg" style="width:100%" onclick="currentSlide(3)">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/30000001000098412_wh_2.jpg" style="width:100%" onclick="currentSlide(4)">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/30000001000098415_wh_2.jpg" style="width:100%" onclick="currentSlide(5)">
+	  </div> 
+	  <div class="column">
+		<img class="demo cursor" src="images/30000001000203992_wh_2.jpg" style="width:100%" onclick="currentSlide(6)">
+	  </div>
+	</div>
+  </div>
+				</div>
+				<h3 style="color: green">
+					Harga Termurah : Rp. 713.000,-
+				</h3>
+			</center>
+		</div>
+		<p><b>Fasilitas</b></p>
+		AC | Parkir | Resepsionis 24 Jam | Kolam Renang | Elevator | Restoran | Wifi
+
+		<p><b>Lokasi/Alamat</b></p>
+		 <a href="https://www.google.com/maps/dir/-8.1707327,113.7310639/Aston+Jember/@-8.1600563,113.7005105,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2dd6941e68ecb4ad:0x4d9b7f9a290d8618!2m2!1d113.6872747!2d-8.1815437">Maps</a></a><br><br>
+		 Jalan Sentot Prawirodirjo No 88, Kaliwates, Jember, Jawa Timur, Indonesia, 68121
+
+		<p><b>Tempat Terdekat</b></p>
+		Lippo Plaza (0,84 Km) | Alun-Alun (2,15 Km) | Stasiun (2,42 Km) | Roxy Square (2,7 Km)
+		<br><br>
+
+		<p><b>Contact us on</b></p>  
+		WA/telp/sms  :   081315115104 / 082123936722
+
+		<div class="container" style="margin-top: 20px">
+				<form action="action_page.php">
+			  
+				  <label for="fname">Name</label>
+				  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+			  
+				  <label for="subject">Review/Comment</label>
+				  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+			  
+				  <input type="submit" value="Submit">
+			  
+				</form>
+			  </div> 
+	</div>
+	<table style="margin-top: 600px" width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
 							<td background="images/weather-bg.jpg" editable="true" style="background: url(images/weather-bg.jpg); background-position: center top;background-repeat: no-repeat; background-size: cover;background-color: #f0f1f3;" valign="top">
 						   <div>
@@ -838,7 +1063,40 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 5000);
 }
+
 </script>
-	
+
+<script>
+var slideIndex = 1;
+showSlides1(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides1(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides1(slideIndex = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 </body>
 </html>

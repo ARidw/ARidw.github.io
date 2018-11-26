@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>
+		Info Pariwisata Jember
+	</title>
+
+</head>
+<body>
+	<div class="head">
+		<div class="header">
+			<h1 class="judul" >
+				<img src="Gambar/icon.png" width=60 class="img">
+				<p  style="display: inline-block; color: #3a3a3a; margin-bottom: 0px">Pariwisata</p> <p style="display: inline-block; color: #f79c00; margin-bottom:  0px">Jember</p>
+			</h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Destination.html">Destination</a></li>
+					<li><a href="Events.html">Events</a></li>
+					<li><a href="Hotel.html">Hotel</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="body">
+		<div class="next">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+
+		<div class="slider">
+			<img src="Slider/gambir0.jpg" style="width: 100%">
+			<div class="nama">KEBUN TEH GAMBIR</div>
+		</div>
+		<div class="slider">
+			<img src="Slider/niagara water park ambulu jember.jpg" style="width: 100%">
+			<div class="nama">NIAGARA WATERPARKk</div>
+		</div>
+		<div class="slider">
+			<img src="Slider/papuma.jpg" style="width: 100%">
+			<div class="nama">PANTAI PAPUMA</div>
+		</div>
+		<div class="slider">
+			<img src="Slider/rembangan.jpg" style="width: 100%">
+			<div class="nama">PEMANDIAN REMBANGAN</div>
+		</div>
+		<div class="slider">
+			<img src="Slider/5.png" style="width: 100%">
+			<div class="nama">AIR TERJUN TANCAK</div>
+		</div>
+			
+	</div>
+	<div class="credit">
+		<div class="map">
+			<h3>Peta Lokasi</h3>
+			<img src="Gambar/WhatsApp Image 2018-10-17 at 21.24.50.jpeg" width=200>
+		</div>
+		<div class="link">
+			<h3>Link-link</h3>
+			<a href="Info Pariwisata Jember.html">Home</a><br><br>
+			<a href="Destination.html">Destination</a><br><br>
+			<a href="Gallery.html">Gallery</a><br><br>
+			<a href="ContactUs.html">Contact Us</a><br><br>
+			<a href="About.html">About</a><br><br>
+		</div>
+		<div style="display: inline-block; position: absolute; left: 950px;margin-top: 70px">
+			<div style="padding-left: 35px"><img src="Gambar/icon.png" width=200></div> <br>
+			<p  style="display: inline-block; color: #3a3a3a; margin: 0px;font-size: 30px">Pariwisata</p>
+			<p style="display: inline-block; color: #f79c00; margin: 0px;font-size: 30px">Jember</p>
+		</div>
+		<div class="tentang">
+			<div>	
+				<h3> Tentang kami</h3>
+				<p style="color: grey">Info Pariwisata Jember memberikan <br>
+					informasi tentang pariwisata yang ada <br>	
+					di Jember. <br>
+					Meliputi pantai, pegunungan, hutan, <br>
+					pemandian, dan air terjun.<br>
+				</p>
+			</div>
+			<div style="color: grey">	
+				<img src="icon/facebook-placeholder-for-locate-places-on-maps.png" width=30>
+				<p  style="display: inline-block;">
+					Jl. Nias 3 No.7 Tegal boto lor, <br>
+					Sumbersari,	Jember, Jawa timur <br>	
+				</p>
+			</div>
+			<div style="color: grey">	
+				<img src="icon/whatsapp-logo.png" width=30>
+				<p  style="display: inline-block;">
+					082 331 861 711 <br>
+					083 847 463 483<br>
+				</p>
+			</div>
+			<div style="color: grey">
+				<img src="icon/instagram-logo.png" width=30>
+				<p  style="display: inline-block;">
+					@andial98 <br>	
+					@prima
+				</p>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slider");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000);
+}
+</script>
+	
+</body>
+</html>
